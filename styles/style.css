@@ -18,7 +18,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--main-font-family), sans-serif;
-  font-weight: var(--main-font-weight);
+  font-variation-settings: 'wght' var(--main-font-weight);
   background-color: var(--background-color);
   color: var(--main-color);
   background-image: var(--background-image);
@@ -43,7 +43,7 @@
   padding-block-end: 20px;
 }
 
-.header-title{
+.header-title {
   font-size: clamp(0.875rem, 0.7143rem + 0.8036vw, 1.4375rem);
   text-transform: uppercase;
 }
@@ -53,7 +53,7 @@
   font-size: 14px;
 }
 
-.theme-menu__list{
+.theme-menu__list {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -61,7 +61,7 @@
 
 .theme-menu__button {
   text-transform: uppercase;
-  background-color: inherit; 
+  background-color: inherit;
   border: none;
   cursor: pointer;
   position: relative;
@@ -120,7 +120,7 @@
 }
 
 .card-title {
-  font-weight: var(--accent-font-weight);
+  font-variation-settings: 'wght' var(--accent-font-weight);
   font-size: 18px;
   padding: 5px 10px;
   border-bottom: 2px solid var(--main-color);
