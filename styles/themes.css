@@ -4,3 +4,46 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-dark {
+    --background-color: #000;
+    --main-color: #00CC14;
+    --main-font-weight: 465;
+    --accent-font-weight: 785;
+    --background-image: 
+        repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #007f0c 0.01%, #004306);
+    --text-stroke-color: rgb(0, 0, 0, 0.5);
+    --button-color: #000;
+    --button-floppy: #00CC14;
+}
+
+:root.theme-light {
+    --background-color: #FFF;
+    --main-color: #000;
+    --main-font-weight: 400;
+    --accent-font-weight: 700;
+    --background-image: 
+        repeating-linear-gradient(to left, #d3d3d3 0 2px, transparent 2px 4px),
+        repeating-linear-gradient(to bottom, #d3d3d3 0 2px, transparent 2px 4px),
+        linear-gradient(to bottom, #e7e7e7 0.01%, #1a1a1a);
+    --text-stroke-color: rgb(255, 255, 255, 0.5);
+    --button-color: #ffffff;
+    --button-floppy: #ffffff;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --background-color: #000;
+        --main-color: #00CC14;
+        --main-font-weight: 465;
+        --accent-font-weight: 785;
+        --background-image: 
+            repeating-linear-gradient(to left, #000 0 2px, transparent 2px 4px),
+            repeating-linear-gradient(to bottom, #000 0 2px, transparent 2px 4px),
+            linear-gradient(to bottom, #007f0c 0.01%, #004306);
+        --text-stroke-color: rgb(0, 0, 0, 0.5);
+        --button-color: #000;
+        --button-floppy: #00CC14;
+    }
+}
