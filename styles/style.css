@@ -17,6 +17,9 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  inline-size: 100%;
+  max-inline-size: 700px;
+  margin: 0 auto;
   font-family: var(--main-font-family), sans-serif;
   font-variation-settings: 'wght' var(--main-font-weight);
   background-color: var(--background-color);
@@ -27,12 +30,10 @@
 }
 
 .header {
-  inline-size: 100%;
-  max-inline-size: 700px;
   border: 2px solid var(--main-color);
   background-color: var(--background-color);
   padding-block-start: clamp(120px, 7.148rem + 1.502vw, 136px);
-  margin: 100px auto;
+  margin: 100px 0;
   display: grid;
   justify-items: center;
   font-family: var(--accent-font-family), fantasy;
@@ -112,11 +113,9 @@
 }
 
 .card {
-  inline-size: 100%;
-  max-inline-size: 700px;
   border: 2px solid var(--main-color);
   background-color: var(--background-color);
-  margin: 0 auto 52px;
+  margin-block-end: 52px;
 }
 
 .card-title {
