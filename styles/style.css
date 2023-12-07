@@ -116,7 +116,7 @@
   max-inline-size: 700px;
   border: 2px solid var(--main-color);
   background-color: var(--background-color);
-  margin:0 auto 52px;
+  margin: 0 auto 52px;
 }
 
 .card-title {
