@@ -41,6 +41,11 @@
 .logo {
   font-size: clamp(3.0625rem, 2.7768rem + 1.4286vw, 4.0625rem);
   padding-block-end: 20px;
+  text-decoration: none;
+}
+
+.logo:focus-visible {
+  outline: none;
 }
 
 .header-title {
@@ -95,6 +100,7 @@
   display: block;
   position: absolute;
   bottom: -3px;
+  left: 6px;
   opacity: 0.6;
   inline-size: 0%;
   block-size: 2px;
@@ -129,6 +135,7 @@
 .card-image-box {
   position: relative;
   border-bottom: 2px solid var(--main-color);
+  margin: 0;
 }
 
 .card-image {
@@ -183,6 +190,11 @@
   font-size: 14px;
   font-family: var(--accent-font-family), fantasy;
   line-height: 90%;
+}
+
+.like-icon {
+  block-size: 36px;
+  inline-size: 39px;
 }
 
 .card__like-button {
@@ -280,7 +292,7 @@
   mix-blend-mode: difference;
 }
 
-dialog {
+.dialog {
   background-color: var(--background-color);
   border: 2px solid var(--main-color);
   display: flex;
@@ -361,6 +373,11 @@ dialog {
   .button-svg {
     inline-size: 28px;
     block-size: 28px;
+  }
+
+  .image-label {
+    top: 22px;
+    right: 11px;
   }
 }
 
